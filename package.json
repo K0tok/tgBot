@@ -1,0 +1,22 @@
+{
+  "name": "backend_template",
+  "version": "1.0.0",
+  "description": "Базовый шаблон для веб-сервера с использованием fastify",
+  "main": "main.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon main.js"
+  },
+  "keywords": [
+    "backend",
+    "temlate"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^8.2.1",
+    "fastify": "^4.15.0",
+    "node-telegram-bot-api": "^0.61.0",
+    "nodemon": "^2.0.22"
+  }
+}
