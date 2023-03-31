@@ -4,7 +4,7 @@ const fastify = require('fastify')({
 })
 const TelegramBot = require('node-telegram-bot-api');
 const chatId = '654245065'
-const token = ''
+const token = '5991048838:AAESt-ulIcp4xF_bay9QsMS2Yb6RUblTclw'
 const bot = new TelegramBot(token, {polling: true})
 // Блок кода, который нужен для исправления ошибки с CORS
 fastify.register(require('@fastify/cors'), (instance) => {
@@ -12,7 +12,7 @@ fastify.register(require('@fastify/cors'), (instance) => {
         const corsOptions = {
             // This is NOT recommended for production as it enables reflection exploits
             origin: true
-        };
+        };  
 
         // do not include CORS headers for requests from localhost
         if (/^localhost$/m.test(req.headers.origin)) {
